@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+}
+
+.meter-container {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #1a1d24;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.decibel-display {
+  margin-bottom: 2rem;
+}
+
+.decibel-value {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #4ade80;
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+}
+
+.decibel-unit {
+  font-size: 2rem;
+  color: #4ade80;
+  margin-left: 1rem;
+}
+
+.control-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.control-button.start {
+  background-color: #4ade80;
+  color: #1a1d24;
+}
+
+.control-button.stop {
+  background-color: #ef4444;
+  color: white;
+}
+
+.control-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.control-button:active {
+  transform: translateY(0);
+}
