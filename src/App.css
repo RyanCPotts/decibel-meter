@@ -12,25 +12,61 @@
   border-radius: 1rem;
   background-color: #1a1d24;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
 }
 
 .decibel-display {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .decibel-value {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
   color: #4ade80;
   text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+  transition: color 0.3s ease;
 }
 
 .decibel-unit {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #4ade80;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
 }
 
+/* Dynamic Color for Decibels */
+.decibel-low {
+  color: #4ade80; /* Green */
+}
+
+.decibel-medium {
+  color: #facc15; /* Yellow */
+}
+
+.decibel-high {
+  color: #ef4444; /* Red */
+}
+
+/* Visual Decibel Bar */
+.decibel-bar {
+  height: 20px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.decibel-bar-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #4ade80;
+  transition: width 0.2s ease, background-color 0.3s ease;
+}
+
+/* Control Button */
 .control-button {
   padding: 1rem 2rem;
   font-size: 1.2rem;
@@ -58,4 +94,20 @@
 
 .control-button:active {
   transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+  .decibel-value {
+    font-size: 4rem;
+  }
+
+  .decibel-unit {
+    font-size: 1.5rem;
+  }
+
+  .control-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
 }
