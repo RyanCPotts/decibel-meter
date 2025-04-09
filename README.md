@@ -1,5 +1,7 @@
-http://localhost:5173/
+VITE + React
+
 npm run dev
+http://localhost:5173/
 
 # Decibel Meter
 
@@ -11,9 +13,6 @@ npm run dev
 
    Clone the repository:
 
-   git clone https://github.com/your-username/decibel-meter.git
+   git clone https://github.com/RyanCPotts/decibel-meter
 
 http://localhost:5173/
-npm run dev
-
-ping
